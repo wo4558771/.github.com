@@ -1163,7 +1163,7 @@
                 <dd>订单操作</dd>
             </dl>
             <dl class="wzz-col-link">
-                <dt>asdadssa</dt>
+                <dt>服务支持</dt>
                 <dd>售后政策</dd>
                 <dd>自助服务</dd>
                 <dd>相关下载</dd>
@@ -1230,7 +1230,7 @@
             </div>
 
         </div>
-        <div class="wzz-slogan">探索黑科技,小米为发烧而生!</div>
+        <div class="wzz-slogan">探索黑科技,小米为发烧而生!!!!</div>
     </div>
     </div>
 </div>
@@ -1305,11 +1305,11 @@
             index>4? index = 0:index;
             move(index);
         });
-        $('#xv_middle_nav_content_img').on('mouseenter',function(){
+        $('#xv_middle_nav_content_img,.right,.left,.list').on('mouseenter',function(){
+            console.log('大盒子')
             clearInterval(timer);
         });
-        $('#xv_middle_nav_content_img').on('mouseleave',function(){
-            console.log('kk');
+        $('#xv_middle_nav_content_img,.right,.left').on('mouseleave',function(){
             timer = setInterval(autoPlay,3000);
         });
 //        自动轮播
